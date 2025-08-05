@@ -11,7 +11,7 @@ $path_path = $args[0]
 #$path_path = $args[1]
 
 if (-not (Test-Path "$path_path")) {
-    $event_backup_folder = Read-Host -Prompt "Select the path to save all event logs: "
+    $event_backup_folder = Read-Host -Prompt "Select the path to save all event viewer: "
 }
 else {
 	$event_backup_folder = "$path_path"
